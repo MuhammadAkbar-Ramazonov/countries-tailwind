@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.site-header {
+  @apply py-6 shadow-headerShadow bg-white dark:bg-[#2B3844];
+}
+.countries-container{
+  @apply container mx-auto max-w-[1240px] px-5;
+}
+.flex-wrapper {
+  @apply flex justify-between items-center;
+}
+.header-button {
+  @apply flex justify-between items-center font-semibold text-base dark:text-white;
+}
+
+.form-selects {
+  @apply w-[200px] p-[18px] pl-6 appearance-none  h-14 border-none bg-white text-[#111517];
+  background-image: url("../images/next.svg");
+  /* background-size: 18px 18px; */
+  background-repeat: no-repeat;
+  background-position: calc(50% + 70px) calc(50% + 3px) ;
+}
+.dark .form-selects{
+  background-image: url("../images/next-darkmode.svg");
+}
+
+.site-input{
+  @apply shadow-inputShadow p-[18px] pl-[74px] placeholder:text-[#848484] block bg-white dark:bg-[#2B3844] dark:placeholder:text-white rounded-md;
+}
+.site-select{
+  @apply shadow-inputShadow rounded-md dark:bg-[#2B3844] dark:text-white;
+}
